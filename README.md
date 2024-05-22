@@ -11,12 +11,13 @@ This repository aims to compare the performance of Python and Rust in the field 
     - Linear Regression
     - Clustering: K-means
     - DecisionTree
+    - MLP Neural Networks
 
 ## Getting Started
 
 ### Clone the Repository
 First, clone the repository to your local machine:
 ```sh
-git clone https://github.com/your-username/python-vs-rust-ml.git
-cd python-vs-rust-ml
+git clone https://github.com/refedico/RustVsPython.git
+cd RustVsPython
 
