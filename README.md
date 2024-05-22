@@ -1,5 +1,5 @@
 # RustVsPython in Machine Learning: A Performance Comparison
-![Alt text]([https://www.google.com/imgres?q=pythonlanguague&imgurl=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2Fc%2Fc3%2FPython-logo-notext.svg%2F640px-Python-logo-notext.svg.png&imgrefurl=https%3A%2F%2Fen.wikipedia.org%2Fwiki%2FPython_(programming_language)&docid=3wRBXLyvECcz0M&tbnid=R_Z2LEghE0FruM&vet=12ahUKEwiXkYiOhaKGAxWK_7sIHXCGDAkQM3oECBkQAA..i&w=640&h=701&hcb=2&ved=2ahUKEwiXkYiOhaKGAxWK_7sIHXCGDAkQM3oECBkQAA](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/640px-Python-logo-notext.svg.png))
+![Alt text](https://github.com/refedico/RustVsPython/blob/main/rustvspython.png)
 This repository aims to compare the performance of Python and Rust in the field of Machine Learning (ML). As Python has been the go-to language for ML due to its extensive libraries and ease of use, Rust is emerging as a powerful alternative, offering potential advantages in performance and memory safety.
 
 ### Contents
