@@ -6,3 +6,9 @@ This repository aims to compare the performance of Python and Rust in the field 
     - Benchmark Tests: A series of benchmarks to measure the performance of Python and Rust in various ML tasks.
     - Sample Projects: Implementations of common ML algorithms in both Python and Rust, including data preprocessing, model training, and evaluation.
     - Performance Analysis: Detailed analysis and comparison of execution times, memory usage, and scalability between the two languages.
+
+### ML algorithms implemented
+    - Linear Regression
+    - Clustering: K-means
+    - DecisionTree
+    
