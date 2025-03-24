@@ -21,16 +21,15 @@ fn mean_squared_error(y_true: &Array1<f64>, y_pred: &Array1<f64>) -> f64 {
 }
 
 fn main() -> Result<()> {
-    // Misurazione uso memoria prima del caricamento del dataset
+    // Measuring memory usage before loading the dataset
     print_memory_usage("Before loading dataset");
 
-    // Carica il dataset Diabetes
     let (train, valid) = linfa_datasets::diabetes().split_with_ratio(0.90);
 
-    // Misurazione uso memoria dopo il caricamento del dataset
+    // Measuring memory usage after dataset loading
     print_memory_usage("After loading dataset");
 
-    // Addestra un modello LASSO con una penalità di 0.3
+    // Train a LASSO model with a penalty of 0.3
     print_memory_usage("Before training the model");
     let model = ElasticNet::params()
         .penalty(0.3)
@@ -38,16 +37,15 @@ fn main() -> Result<()> {
         .fit(&train)?;
     print_memory_usage("After training the model");
 
-    // Stampa lo z-score
     // println!("z score: {:?}", model.z_score());
 
-    // Calcola R² sul set di validazione
+    // Calculate R² on the validation set
     print_memory_usage("Before prediction");
     let y_est = model.predict(&valid);
     print_memory_usage("After prediction");
     println!("predicted variance: {}", valid.r2(&y_est)?);
 
-    // Calcola l'errore quadratico medio (MSE)
+    // Calculate the mean square error (MSE)
     let mse = mean_squared_error(&valid.targets, &y_est);
     println!("Mean Squared Error: {}", mse);
 
