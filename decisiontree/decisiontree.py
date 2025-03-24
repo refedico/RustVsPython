@@ -10,7 +10,7 @@ def print_memory_usage(message):
     rss = process.memory_info().rss / (1024 * 1024)  # Convert bytes to MB
     print(f"{message} - RSS: {rss:.2f} MB")
 
-# Monitoraggio memoria prima del caricamento del dataset
+# Memory monitoring before loading dataset
 print_memory_usage("Before loading dataset")
 
 # Carica il dataset Iris
