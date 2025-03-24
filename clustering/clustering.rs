@@ -57,8 +57,8 @@ fn main() {
 
     log_memory_usage("After prediction");
 
-    // Save to disk our dataset (and the cluster label assigned to each observation)
-    // We use the npy format for compatibility with NumPy
+    // Save to disk our dataset (and the cluster label assigned to each observation),
+    // we use the npy format for compatibility with NumPy
     write_npy("clustered_dataset.npy", &records).expect("Failed to write .npy file");
     write_npy("clustered_memberships.npy", &targets.map(|&x| x as u64))
     .expect("Failed to write .npy file");
